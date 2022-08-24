@@ -8,7 +8,5 @@ jobs:
     steps:
       - checkout
       - run: npm ci
-      - snyk/scan:
-          fail-on-issues: false
-          severity-threshold: high
+      - snyk/scan
 workflows: null
